@@ -1,13 +1,26 @@
-#include <stdio.h>
-
-/**
- * main - Entry point
- * Description: prints "\"_putchar"
- * Return: 0
+/*
+ * File: 0-putchar.c 
+ *
  */
 
-int main(void)
-{
-	puts("\"_putchar");
-	return (0);
-}
+ #include "main.h" 
+
+ /** 
+ * main-print putchar followed by a new line
+ * 
+ *Return :always 0
+ */
+  int main(void) 
+ {
+      _putchar('_' );
+      _putchar ('p' );
+      _putchar ('u' );
+      _putchar ('t' );
+      _putchar ('c' );
+      _putchar ('h' );
+      _putchar ('a' );
+      _putchar ('r' );
+      _putchar ('\n');
+      
+       return (0) ;
+} 
