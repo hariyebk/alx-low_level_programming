@@ -1,21 +1,21 @@
 #include "main.h"
 
 /**
- *main -starting point
+ * main - program that prints _putchar.
  *
- *Return: 
+ * Return: 0
  */
-
-int return_putchar(int x)
-{
-x = _putchar;
-
-return x;
-}
 
 int main(void)
 {
-int return_putchar(x);
+	int n = 0;
+	char str_hbt[9] = "_putchar";
 
-return (0);
+	while (n < 9)
+	{
+		_putchar(str_hbt[n]);
+		n += 1;
+	}
+	_putchar('\n');
+	return (0);
 }
