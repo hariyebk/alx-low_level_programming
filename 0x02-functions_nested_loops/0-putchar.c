@@ -1,11 +1,21 @@
 #include "main.h"
+
 /**
- * main - prints _putchar and a new line
- * Return: Always 0
+ *main -starting point
+ *
+ *Return: 
  */
+
+int return_putchar(int x)
+{
+x = _putchar;
+
+return x;
+}
 
 int main(void)
 {
-putchar('_putchar');
+int return_putchar(x);
+
 return (0);
-} 
+}
