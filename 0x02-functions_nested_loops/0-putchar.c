@@ -8,9 +8,8 @@
 
 int main(void)
 {
-	char hari = "_putchar";
-        _putchar(hari);
+	char str_hbt[] = "_putchar";
+    _putchar(str_hbt[]);
 	_putchar('\n');
 	return (0);
 }
-
