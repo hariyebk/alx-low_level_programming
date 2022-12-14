@@ -1,15 +1,22 @@
 #include "main.h"
 
 /**
- * main - program that prints Holberton.
+ * main - program that prints _putchar.
  *
- * Return: int
+ * Return: 0
  */
 
 int main(void)
 {
-	char str_hbt[] = "_putchar";
-    _putchar(str_hbt[]);
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
 	_putchar('\n');
+
 	return (0);
 }
