@@ -1,21 +1,37 @@
 #include "main.h"
 
 /**
- * _strcpy - function that copies the string
- *
- * @dest: pointer to destination char
- * @src: pointer to source char
- * Return: char
+ * _atoi - function that convert a string to an integer
+ * @s: string to convert
+ * Return: int
  */
 
-char *_strcpy(char *dest, char *src)
-{
-	int i;
 
-	for (i = 0; src[i] != '\0'; i++)
+int _atoi(char *s)
+{
+	int i = 0;
+	int n = 0;
+	int signo = 1;
+
+	while ((s[i] < '0' || s[i] > '9') && s[i] != 0)
 	{
-		*(dest + i) = *(src + i);
+		if (s[i] == '-')
+			signo *= -1;
+		i++;
 	}
-	*(dest + i) = '\0';
-	return (dest);
+	while ((s[i] >= '0' && s[i] <= '9') && s[i] != 0)
+	{
+		if (n >= 0)
+		{
+			n = n * 10 - (s[i] - '0');
+			i++;
+		}
+		else
+		{
+			n = n * 10 - (s[i] - '0');
+			i++;
+		}
+	}
+	signo *= -1;
+	return (n * signo);
 }
