@@ -7,20 +7,23 @@
  *
  *Return: void.
  */
-void print_number(int n)
-{
-	unsigned int num;
-/*check if number is negative*/
-	num = n;
-	if (n < 0)
-	{
-		_putchar(45);
-		num = -n;
-	}
-/* print number by recursion*/
-	if (num / 10)
-	{
-		print_number(num / 10);
-	}
-	_putchar((num % 10) + '0');
+void print_number(int n) {
+    // Check if number is negative
+    if (n < 0) {
+        _putchar('-');
+        n = -n;
+    }
+
+    // If number is greater than 0, print out each digit
+    if (n > 0) {
+        // Get the last digit
+        char lastDigit = n % 10;
+
+        // Recurse until only one digit is left
+        if (n / 10 != 0)
+            print_number(n / 10);
+
+        // Print the last digit
+        _putchar(lastDigit + '0');
+    }
 }
